@@ -1,3 +1,9 @@
+/*
+	Battleship - Ship.h
+
+		Contains declarations for the Ship class.
+*/
+
 #ifndef SHIP_H
 #define SHIP_H
 
