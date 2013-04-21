@@ -1,9 +1,9 @@
 #ifndef BOMBER_H
 #define BOMBER_H
 
-#include "Ship.h"
+#include "Aircraft.h"
 
-class Bomber : public Ship
+class Bomber : public Aircraft
 {
 public:
 	Bomber();

@@ -1,14 +1,13 @@
-#ifndef SPYSATELLITE_H
-#define SPYSATELLITE_H
+#ifndef SPY_SATELLITE_H
+#define SPY_SATELLITE_H
 
-#include "Ship.h"
+#include "Aircraft.h"
 
-class SpySatellite :
-	public Ship
+class SpySatellite : public Aircraft
 {
-public:
-	SpySatellite(void);
-	~SpySatellite(void);
+	public:
+		SpySatellite();
+		~SpySatellite();
 };
 
 #endif

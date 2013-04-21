@@ -3,12 +3,11 @@
 
 #include "Ship.h"
 
-class Destroyer :
-	public Ship
+class Destroyer : public Ship
 {
-public:
-	Destroyer(void);
-	~Destroyer(void);
+	public:
+		Destroyer();
+		~Destroyer();
 };
 
 #endif

@@ -5,7 +5,6 @@ Cruiser::Cruiser()
 
 }
 
-
 Cruiser::~Cruiser()
 {
 

@@ -5,9 +5,9 @@
 
 class Cruiser : public Ship
 {
-public:
-	Cruiser();
-	~Cruiser();
+	public:
+		Cruiser();
+		~Cruiser();
 };
 
 #endif

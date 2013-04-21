@@ -5,7 +5,6 @@ Battleship::Battleship()
 
 }
 
-
 Battleship::~Battleship()
 {
 

@@ -5,9 +5,9 @@
 
 class Battleship : public Ship
 {
-public:
-	Battleship();
-	~Battleship();
+	public:
+		Battleship();
+		~Battleship();
 };
 
 #endif

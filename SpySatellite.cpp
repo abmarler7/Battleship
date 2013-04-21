@@ -5,7 +5,6 @@ SpySatellite::SpySatellite()
 
 }
 
-
 SpySatellite::~SpySatellite()
 {
 

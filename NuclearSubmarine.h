@@ -1,13 +1,13 @@
-#ifndef NUCLEARSUBMARINE_H
-#define NUCLEARSUBMARINE_H
+#ifndef NUCLEAR_SUBMARINE_H
+#define NUCLEAR_SUBMARINE_H
 
 #include "Ship.h"
 
 class NuclearSubmarine : public Ship
 {
-public:
-	NuclearSubmarine(void);
-	~NuclearSubmarine(void);
+	public:
+		NuclearSubmarine();
+		~NuclearSubmarine();
 };
 
 #endif
