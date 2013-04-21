@@ -14,7 +14,12 @@ using namespace std;
 
 int main()
 {
-	Grid testGrid = Grid();
+	int size;
+
+	cout << "Set the grid size below" << endl;
+	cin >> size;
+
+	Grid testGrid = Grid(size,size);
 	testGrid.setGridAt(5,5,'o');
 	testGrid.setGridAt(6,5,'o');
 	testGrid.setGridAt(7,5,'o');
