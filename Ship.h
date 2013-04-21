@@ -20,7 +20,7 @@ class Ship
 		int getX() { return x; };
 		int getY() { return y; };
 		int getDirection() { return direction; };
-		int getStatus () { return fire };
+		int getStatus () { return fire; };
 		//Set Functions
 		void setX(int newX) { x = newX; };
 		void setY(int newY) { y = newY; };

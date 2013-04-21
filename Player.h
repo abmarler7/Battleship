@@ -1,9 +1,3 @@
-/*
-	Battleship - Player.h
-
-		Contains declarations for the Player class.
-*/
-
 #include <iostream>
 using namespace std;
 

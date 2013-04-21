@@ -3,15 +3,19 @@
 
 class Fighter
 {
-private:
-	int fire;
 
-public:
-	//Get functions
-	int getStatus () { return fire };
+	private:
+		int fire; //Returns hit, sink, or miss
 
-	//Set functions
-	int setStatus (int newFire) { fire = newFire };
-}
+	public:
+		Fighter();
+		~Fighter();
+
+		//Get functions
+		int getStatus () { return fire; };
+
+		//Set functions
+		int setStatus (int newFire) { fire = newFire; };
+};
 
 #endif
