@@ -10,10 +10,17 @@ using namespace std;
 
 #include "Ship.h"
 #include "Player.h"
+#include "Grid.h"
 
 int main()
 {
-	cout << "This is running..." << endl;
+	Grid testGrid = Grid();
+	testGrid.setGridAt(5,5,'o');
+	testGrid.setGridAt(6,5,'o');
+	testGrid.setGridAt(7,5,'o');
+	testGrid.drawGrid();
+	cout << "Turn: Andrew." << endl;
+	cout << "Coordinates: (13,37)." << endl;
 	getch();
 	return 0;
 }
