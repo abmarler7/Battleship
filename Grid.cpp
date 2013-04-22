@@ -3,6 +3,11 @@ using namespace std;
 
 #include "Grid.h"
 
+Grid::Grid()
+{
+	//Default Constructor
+}
+
 Grid::Grid(int newWidth, int newHeight)
 {
 	width = newWidth;

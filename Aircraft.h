@@ -4,7 +4,7 @@
 class Aircraft
 {
 	protected:
-		int health;
+		int health, damage;
 	public:
 		Aircraft();
 		~Aircraft();

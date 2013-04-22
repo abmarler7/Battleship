@@ -9,6 +9,7 @@ class Grid
 		char** gridSpace;
 		int width, height;
 	public:
+		Grid();
 		Grid(int newWidth, int newHeight);
 		~Grid();
 

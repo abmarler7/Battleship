@@ -2,7 +2,8 @@
 
 Battleship::Battleship()
 {
-
+	health = 4;
+	damage = 4;
 }
 
 Battleship::~Battleship()
