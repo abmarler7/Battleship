@@ -8,6 +8,8 @@ class Fighter : public Aircraft
 	public:
 		Fighter();
 		~Fighter();
+
+		bool visibility();
 };
 
 #endif
