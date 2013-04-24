@@ -6,6 +6,15 @@
 
 #include "Player.h"
 #include "Grid.h"
+#include "Ship.h"
+#include "AircraftCarrier.h"
+#include "Cruiser.h"
+#include "Destroyer.h"
+#include "NuclearSubmarine.h"
+#include "Aircraft.h"
+#include "Fighter.h"
+#include "Bomber.h"
+#include "SpySatellite.h"
 
 Player::Player(string newName, char newType, int gridSize)
 {
@@ -18,4 +27,9 @@ Player::Player(string newName, char newType, int gridSize)
 Player::~Player()
 {
 	//Default Destructor
+}
+
+int Player::fire(int x, int y)
+{
+	void AircraftCarrier::AircraftCarrier.getX();
 }
