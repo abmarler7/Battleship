@@ -11,6 +11,10 @@ using namespace std;
 #include <conio.h>
 
 #include "Ship.h"
+#include "AircraftCarrier.h"
+#include "Cruiser.h"
+#include "Destroyer.h"
+#include "NuclearSubmarine.h"
 #include "Player.h"
 #include "Grid.h"
 #include "EventManager.h"
@@ -25,6 +29,8 @@ int main()
 
 	int playerAmount = 0;
 	vector <Player> players;
+
+	int x, y;
 
 	//Player Setup
 	system("CLS");
@@ -61,6 +67,13 @@ int main()
 	testGrid.drawGrid();
 	cout << "Turn: Andrew." << endl;
 	cout << "Coordinates: (13,37)." << endl;
+	
+	cout << "Set cordinates of Aircraft Carrier: ";
+	cin >> x >> y;
+	AircraftCarrier AircraftCarrierOne = AircraftCarrier();
+	AircraftCarrierOne.setX(x);
+	AircraftCarrierOne.setY(y);
+
 	getch();
 	return 0;
 }
