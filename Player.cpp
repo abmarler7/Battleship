@@ -29,7 +29,12 @@ Player::~Player()
 	//Default Destructor
 }
 
-int Player::fire(int x, int y)
+char Player::fire(int x, int y)
 {
-	void AircraftCarrier::AircraftCarrier.getX();
+	if (x = carrier.getX(), y = carrier.getY())
+		return 'h';
+	if (x = battleship.getX(), y = battleship.getY())
+		return 'h';
+	if (x = cruiser.getX(), y = cruiser.getX())
+		return 'h';
 }
