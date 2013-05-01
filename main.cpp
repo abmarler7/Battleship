@@ -31,6 +31,7 @@ int main()
 	int playerAmount = 0;
 	vector <Player> players;
 
+	char fire;
 	int x, y;
 
 	//Player Setup
@@ -67,30 +68,38 @@ int main()
 	Grid testGrid = Grid(gridSize,gridSize);
 	testGrid.drawGrid();
 
-	cout << "Set position of Aircraft Carrier: " << endl;
-	cin >> x >> y;
-	players[0].setPosition(x, y, "carrier");
+	for (int i = 0; i < playerAmount; i++)
+	{
+		cout << "Set position of Aircraft Carrier: " << endl;
+		cin >> x >> y;
+		players[i].setPosition(x, y, "carrier");
+		
+		cout << "Set position of Battleship: " << endl;
+		cin >> x >> y;
+		players[i].setPosition(x, y, "battleship");
 
-	cout << "Set position of Battleship: " << endl;
-	cin >> x >> y;
-	players[0].setPosition(x, y, "battleship");
+		cout << "Set position of Cruiser: " << endl;
+		cin >> x >> y;
+		players[i].setPosition(x, y, "cruiser");
 
-	cout << "Set position of Cruiser: " << endl;
-	cin >> x >> y;
-	players[0].setPosition(x, y, "cruiser");
+		cout << "Set position of Destroyer: " << endl;
+		cin >> x >> y;
+		players[i].setPosition(x, y, "destroyer");
 
-	cout << "Set position of Destroyer: " << endl;
-	cin >> x >> y;
-	players[0].setPosition(x, y, "destroyer");
-
-	cout << "Set position of Nuclear Submarine: " << endl;
-	cin >> x >> y;
-	players[0].setPosition(x, y, "sub");
+		cout << "Set position of Nuclear Submarine: " << endl;
+		cin >> x >> y;
+		players[i].setPosition(x, y, "sub");
+	}
 
 	cout << "Turn: Andrew." << endl;
 	cout << "Coordinates: " << endl;
 	cin >> x >> y;
-	players[0].fire(x, y);
+	fire = players[0].fire(x, y);
+
+	if (fire == 'h')
+		cout << "Hit!" << endl;
+	else
+		cout << "Miss" << endl;
 
 	getch();
 	return 0;
