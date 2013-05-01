@@ -12,6 +12,7 @@ using namespace std;
 
 #include "Ship.h"
 #include "AircraftCarrier.h"
+#include "Battleship.h"
 #include "Cruiser.h"
 #include "Destroyer.h"
 #include "NuclearSubmarine.h"
@@ -65,14 +66,31 @@ int main()
 
 	Grid testGrid = Grid(gridSize,gridSize);
 	testGrid.drawGrid();
-	cout << "Turn: Andrew." << endl;
-	cout << "Coordinates: (13,37)." << endl;
-	
-	cout << "Set cordinates of Aircraft Carrier: ";
+
+	cout << "Set position of Aircraft Carrier: " << endl;
 	cin >> x >> y;
-	AircraftCarrier AircraftCarrierOne = AircraftCarrier();
-	AircraftCarrierOne.setX(x);
-	AircraftCarrierOne.setY(y);
+	players[0].setPosition(x, y, "carrier");
+
+	cout << "Set position of Battleship: " << endl;
+	cin >> x >> y;
+	players[0].setPosition(x, y, "battleship");
+
+	cout << "Set position of Cruiser: " << endl;
+	cin >> x >> y;
+	players[0].setPosition(x, y, "cruiser");
+
+	cout << "Set position of Destroyer: " << endl;
+	cin >> x >> y;
+	players[0].setPosition(x, y, "destroyer");
+
+	cout << "Set position of Nuclear Submarine: " << endl;
+	cin >> x >> y;
+	players[0].setPosition(x, y, "sub");
+
+	cout << "Turn: Andrew." << endl;
+	cout << "Coordinates: " << endl;
+	cin >> x >> y;
+	players[0].fire(x, y);
 
 	getch();
 	return 0;

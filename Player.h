@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
 #include "Grid.h"
@@ -44,6 +45,7 @@ class Player
 		char getType() { return type; };
 
 		char fire(int x, int y);
+		void setPosition(int x, int y, string ship);
 };
 
 #endif

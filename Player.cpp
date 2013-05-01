@@ -4,6 +4,7 @@
 		Contains functions for the Player class.
 */
 
+#include <string>
 #include "Player.h"
 #include "Grid.h"
 #include "Ship.h"
@@ -31,10 +32,45 @@ Player::~Player()
 
 char Player::fire(int x, int y)
 {
-	if (x = carrier.getX(), y = carrier.getY())
+	if (x == carrier.getX(), y == carrier.getY())
 		return 'h';
-	if (x = battleship.getX(), y = battleship.getY())
+	else if (x == battleship.getX(), y == battleship.getY())
 		return 'h';
-	if (x = cruiser.getX(), y = cruiser.getX())
+	else if (x == cruiser.getX(), y == cruiser.getX())
 		return 'h';
+	else if (x == destroyer.getX(), y == destroyer.getY())
+		return 'h';
+	else if (x == nuclearSubmarine.getX(), y == nuclearSubmarine.getY())
+		return 'h';
+	else
+		return 'm';
+}
+
+void Player::setPosition(int x, int y, string ship)
+{
+	if (ship == "carrier")
+	{
+		carrier.setX(x);
+		carrier.setY(y);
+	}
+	else if (ship == "battleship")
+	{
+		battleship.setX(x);
+		battleship.setY(y);
+	}
+	else if (ship == "cruiser")
+	{
+		cruiser.setX(x);
+		cruiser.setY(y);
+	}
+	else if (ship == "destroyer")
+	{
+		destroyer.setX(x);
+		destroyer.setY(y);
+	}
+	else if (ship == "sub")
+	{
+		nuclearSubmarine.setX(x);
+		nuclearSubmarine.setY(y);
+	}
 }

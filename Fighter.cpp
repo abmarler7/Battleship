@@ -10,8 +10,3 @@ Fighter::~Fighter()
 {
 
 }
-
-bool Fighter::visibility()
-{
-
-}
