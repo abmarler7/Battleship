@@ -43,6 +43,7 @@ class Player
 		string getName() { return name; };
 		char getType() { return type; };
 
+		char fire(int x, int y);
 };
 
 #endif
