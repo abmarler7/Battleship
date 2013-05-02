@@ -46,31 +46,36 @@ char Player::fire(int x, int y)
 		return 'm';
 }
 
-void Player::setPosition(int x, int y, string ship)
+void Player::setPosition(int x, int y, char direction, string ship)
 {
 	if (ship == "carrier")
 	{
 		carrier.setX(x);
 		carrier.setY(y);
+		carrier.setDirection(direction);
 	}
 	else if (ship == "battleship")
 	{
 		battleship.setX(x);
 		battleship.setY(y);
+		battleship.setDirection(direction);
 	}
 	else if (ship == "cruiser")
 	{
 		cruiser.setX(x);
 		cruiser.setY(y);
+		cruiser.setDirection(direction);
 	}
 	else if (ship == "destroyer")
 	{
 		destroyer.setX(x);
 		destroyer.setY(y);
+		destroyer.setDirection(direction);
 	}
 	else if (ship == "sub")
 	{
 		nuclearSubmarine.setX(x);
 		nuclearSubmarine.setY(y);
+		nuclearSubmarine.setDirection(direction);
 	}
 }

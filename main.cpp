@@ -32,7 +32,7 @@ int main()
 	vector <Player> players;
 
 	char fire;
-	int x, y;
+	int x, y, direction;
 
 	//Player Setup
 	system("CLS");
@@ -70,25 +70,25 @@ int main()
 
 	for (int i = 0; i < playerAmount; i++)
 	{
-		cout << "Set position of Aircraft Carrier: " << endl;
-		cin >> x >> y;
-		players[i].setPosition(x, y, "carrier");
+		cout << "Set position and direction of Aircraft Carrier: " << endl;
+		cin >> x >> y >> direction;
+		players[i].setPosition(x, y, direction, "carrier");
 		
-		cout << "Set position of Battleship: " << endl;
-		cin >> x >> y;
-		players[i].setPosition(x, y, "battleship");
+		cout << "Set position and direction of Battleship: " << endl;
+		cin >> x >> y >> direction;
+		players[i].setPosition(x, y, direction, "battleship");
 
-		cout << "Set position of Cruiser: " << endl;
-		cin >> x >> y;
-		players[i].setPosition(x, y, "cruiser");
+		cout << "Set position and direction of Cruiser: " << endl;
+		cin >> x >> y >> direction;
+		players[i].setPosition(x, y, direction, "cruiser");
 
-		cout << "Set position of Destroyer: " << endl;
-		cin >> x >> y;
-		players[i].setPosition(x, y, "destroyer");
+		cout << "Set position and direction of Destroyer: " << endl;
+		cin >> x >> y >> direction;
+		players[i].setPosition(x, y, direction, "destroyer");
 
-		cout << "Set position of Nuclear Submarine: " << endl;
-		cin >> x >> y;
-		players[i].setPosition(x, y, "sub");
+		cout << "Set position and direction of Nuclear Submarine: " << endl;
+		cin >> x >> y >> direction;
+		players[i].setPosition(x, y, direction, "sub");
 	}
 
 	cout << "Turn: Andrew." << endl;

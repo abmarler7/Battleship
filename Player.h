@@ -45,7 +45,7 @@ class Player
 		char getType() { return type; };
 
 		char fire(int x, int y);
-		void setPosition(int x, int y, string ship);
+		void setPosition(int x, int y, char direction, string ship);
 };
 
 #endif
