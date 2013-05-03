@@ -32,15 +32,15 @@ Player::~Player()
 
 char Player::fire(int x, int y)
 {
-	if (x == carrier.getX(), y == carrier.getY())
+	if (x == carrier.getX() && y == carrier.getY())
 		return 'h';
-	else if (x == battleship.getX(), y == battleship.getY())
+	else if (x == battleship.getX() && y == battleship.getY())
 		return 'h';
-	else if (x == cruiser.getX(), y == cruiser.getX())
+	else if (x == cruiser.getX() && y == cruiser.getX())
 		return 'h';
-	else if (x == destroyer.getX(), y == destroyer.getY())
+	else if (x == destroyer.getX() && y == destroyer.getY())
 		return 'h';
-	else if (x == nuclearSubmarine.getX(), y == nuclearSubmarine.getY())
+	else if (x == nuclearSubmarine.getX() && y == nuclearSubmarine.getY())
 		return 'h';
 	else
 		return 'm';
