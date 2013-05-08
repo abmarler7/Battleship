@@ -32,18 +32,28 @@ Player::~Player()
 
 char Player::fire(int x, int y)
 {
-	if (x == carrier.getX() && y == carrier.getY())
-		return 'h';
-	else if (x == battleship.getX() && y == battleship.getY())
-		return 'h';
-	else if (x == cruiser.getX() && y == cruiser.getX())
-		return 'h';
-	else if (x == destroyer.getX() && y == destroyer.getY())
-		return 'h';
-	else if (x == nuclearSubmarine.getX() && y == nuclearSubmarine.getY())
-		return 'h';
-	else
-		return 'm';
+	if (carrier.getDirection() == 'n' || battleship.getDirection() == 'n'
+		|| cruiser.getDirection() == 'n' || destroyer.getDirection() == 'n'
+		|| nuclearSubmarine.getDirection() == 'n')
+	{
+		if (x == carrier.getX() && y >= carrier.getY()
+			&& y <= (carrier.getY() + carrier.getLength()))
+			return 'h';
+		else if (x == battleship.getX() && y >= battleship.getY()
+			&& y <= (battleship.getY() + battleship.getLength()))
+			return 'h';
+		else if (x == cruiser.getX() && y >= cruiser.getY()
+			&& y <= (cruiser.getY() + cruiser.getLength()))
+			return 'h';
+		else if (x == destroyer.getX() && y >= destroyer.getY()
+			&& y <= (destroyer.getY() + destroyer.getLength()))
+			return 'h';
+		else if (x == nuclearSubmarine.getX() && y >= nuclearSubmarine.getY()
+			&& y <= (nuclearSubmarine.getY() + nuclearSubmarine.getLength()))
+			return 'h';
+		else
+			return 'm';
+	}
 }
 
 void Player::setPosition(int x, int y, char direction, string ship)
